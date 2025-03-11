@@ -1,0 +1,73 @@
+/* Basic styling for the tab list */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    /* Centers the tabs horizontally */
+    background-color: #444;
+    /* Dark background for contrast */
+    overflow: hidden;
+    /* Ensures the background extends to the edges of the container */
+  }
+  
+  /* Style for each tab list item */
+  nav li {
+    margin: 0;
+    /* Removes default spacing */
+  }
+  
+  /* Style for each tab link */
+  nav a {
+    display: block;
+    /* Makes the entire area clickable */
+    color: #fff;
+    /* White text for readability */
+    text-decoration: none;
+    /* Removes underlines */
+    padding: 14px 16px;
+    /* Adds padding for a comfortable click area */
+    text-align: center;
+    /* Centers the text in the tab */
+    transition: background-color 0.3s ease;
+    /* Smooth transition for hover effect */
+  }
+  
+  /* Hover state for the tab links */
+  nav a:hover {
+    background-color: #555;
+    /* Slightly lighter background on hover */
+  }
+  
+  /* Active state for the current/active tab */
+  nav a.active {
+    background-color: magenta;
+    /* Blue background for the active tab */
+    color: white;
+    /* White text for the active tab */
+  }
+  
+  /* Style for the tab content area */
+  main {
+    padding: 20px;
+    /* Adds padding around the content */
+    background-color: #333333;
+    /* White background for content */
+    border-radius: 8px;
+    /* Rounded corners for a softer look */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+  }
+  
+  /* Style for the section headings */
+  section h2 {
+    color: magenta;
+    /* Blue color for headings */
+    border-bottom: 2px solid #eee;
+    /* Light border to separate heading */
+    padding-bottom: 5px;
+    /* Spacing below the heading */
+    margin-bottom: 10px;
+    /* Spacing below the heading */
+  }

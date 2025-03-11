@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* Gradient background */
+    background: linear-gradient(to bottom, magenta, #191970);
+    /* Magenta to dark blue */
+    color: #fff;
+    line-height: 1.6;
+  }
+  
+  /* Header Styles */
+  header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    border-bottom: 3px solid magenta;
+  }
+  
+  .header-content {
+    max-width: 800px;
+    margin: auto;
+    padding: 0 20px;
+  }
+  
+  header img {
+    width: 150px;
+    border-radius: 50%;
+    margin-top: 20px;
+  }
+  
+  /* Navigation Styles */
+  nav {
+    background: #444;
+    color: #fff;
+    padding: 0.5rem 0;
+  }
+  
+  nav ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+  }
+  
+  nav li {
+    display: inline;
+    margin: 0 20px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    color: magenta;
+  }
+  
+  /* Main Content Styles */
+  main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #333333;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #fff;
+  }
+  
+  section {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    color: #fff;
+  }
+  
+  section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  
+  h2 {
+    color: magenta;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
+  }
+  
+  ul {
+    padding: 0;
+    list-style: none;
+  }
+  
+  li {
+    margin-bottom: 5px;
+  }
+  
+  /* Footer Styles */
+  footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 20px;
+  }
+  
+  footer a {
+    color: #fff;
+  }
+  
+  footer a:hover {
+    color: magenta;
+  }
+  
+  /* Contact Section in Footer */
+  #contato p {
+    margin-bottom: 0.5rem;
+  }
+  
+  #contato i {
+    margin-right: 0.5rem;
+    color: magenta;
+  }
