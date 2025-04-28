@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversos Binário</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        // Função que realiza a conversão de decimal para binário
+        function converterParaBinario() {
+            // Pega o valor digitado na caixa de entrada pelo usuário
+            var decimal = document.getElementById("decimalInput").value;
+
+            // Verifica se o campo de entrada está vazio
+            if (decimal == "") {
+                // Exibe uma mensagem de alerta caso o campo esteja vazio
+                alert("Por favor, insira um número.");
+                return; // Interrompe a execução da função, se não houver número
+            }
+            
+            // Converte o valor inserido (decimal) para binário
+            // O parseInt converte a string para um número inteiro e o toString(2) converte o número para binário
+            var binario = parseInt(decimal).toString(2);
+
+            // Exibe o resultado na tela no parágrafo com o id 'resultado'
+            document.getElementById("resultado").innerText = "O número binário é: " + binario;
+        }
+        //OUTRA FUNÇÂO CONTRÁRIA
+
+         // Função que realiza a conversão de decimal para binário
+         function converterParadecimal() {
+            // Pega o valor digitado na caixa de entrada pelo usuário
+            var binario = document.getElementById("binarioInput").value;
+
+            // Verifica se o campo de entrada está vazio
+            if (binario == "") {
+                // Exibe uma mensagem de alerta caso o campo esteja vazio
+                alert("Por favor, insira um número binário.");
+                return; // Interrompe a execução da função, se não houver número
+            }
+            
+            // Converte o valor inserido (decimal) para binário
+            // O parseInt converte a string para um número inteiro e o toString(2) converte o número para binário
+            var decimal = parseInt(binario).toString(2);
+
+            // Exibe o resultado na tela no parágrafo com o id 'resultado'
+            document.getElementById("resultado2").innerText = "O número decimal é: " + decimal;
+        }
+    </script>
+</head>
+<body>
+
+    <div class="content">
+    <h1>Conversor de Decimal para Binário</h1> 
+    <hr>
+    <br>
+    <input text="number" id="decimalInput" placeholder="Digite um número decimal">
+    <button onclick="converterParaBinario()">Converter</button>
+
+    <!-- Parágrafo onde o resultado da conversão será exibido -->
+    <h3 id="resultado"></h3>
+   
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-image: url('mathematics-background-zwq7mm3o4j8bzk6i.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('mathematics-background-zwq7mm3o4j8bzk6i.png');
+    background-size: cover;
+    background-position: center;
+    filter: blur(2.5px); /* Aplica o blur na imagem de fundo */
+    z-index: -1; /* Garante que o background fique atrás do conteúdo */
+}
+
+.content {
+    position: absolute; /* Usando absolute para posicionar em relação ao elemento pai (body ou html) */
+    top: 50%; /* Posiciona o conteúdo no meio da página */
+    left: 50%; /* Posiciona o conteúdo no meio da página */
+    transform: translate(-50%, -50%); /* Ajusta para que o conteúdo seja centralizado corretamente */
+    z-index: 1; /* Garante que o conteúdo fique acima da imagem de fundo */
+    text-align: center; /* Alinha o texto ao centro */
+    color: rgb(0, 0, 0);
+    padding: 50px;
+}
+
+h1 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#decimalInput {
+    font-size: 18px; /* Aumenta o tamanho da fonte */
+    padding: 10px; /* Adiciona preenchimento ao redor do texto */
+    width: 300px; /* Define a largura do campo de entrada */
+    border-radius: 5px; /* Bordas arredondadas */
+    border: 2px solid #ccc; /* Cor da borda */
+}
+
+button {
+    font-size: 18px; /* Aumenta o tamanho da fonte do botão */
+    padding: 10px 20px; /* Adiciona preenchimento ao redor do texto no botão */
+    border-radius: 5px; /* Bordas arredondadas no botão */
+    background-color: #4CAF50; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    border: none; /* Remove a borda padrão do botão */
+    cursor: pointer; /* Mostra o cursor como uma mãozinha ao passar o mouse sobre o botão */
+}
+
+button:hover {
+    background-color: #45a049; /* Cor de fundo quando o botão é hover */
+}
